@@ -1,0 +1,94 @@
+@font-face{
+    font-family:'Monserrat';
+    src: url(../multimedia/Montserrat.ttf)
+}
+*{
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Monserrat', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "none main main none"
+    "none main main none"
+    "footer footer footer footer";
+}
+header{
+    height: 75px;
+    width: 100%;
+    text-decoration: none;
+    flex-direction: row;
+    font-family:'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+    background-color: #31645a;
+    z-index: 500000;
+    padding: 30px; 
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: header;
+}
+header .logo{
+    width: 120px;
+    width: 120px;
+    background-color: #31645a;
+    margin-left: 15px;
+    }
+main {
+    font-family:'Montserrat', sans-serif;
+    color: black;
+    font-size: 15px;
+    background-color: #31645a;
+    grid-area: main;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/*cambie padding banner*/
+.banner{
+    width: 100%;
+    height: 60px;
+    padding: 80px;
+}
+#itemHeader{
+    background-color: #31645a;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 40px;
+    padding: 40px;
+}
+#sobreNosotros p{
+    font-size: 40px;
+    padding: 40px;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    grid-area: footer;
+}
+form{
+    background-color: #31645a;
+    font-family: 'Montserrat', sans-serif;
+}
+div p{
+    background-color: #31645a;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    background-color: #31645a;
+    padding: auto;
+    font-size: 15px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
